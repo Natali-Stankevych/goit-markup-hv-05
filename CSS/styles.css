@@ -90,9 +90,7 @@ span {
 
 /* HEADER*/
 
-.header{
-    padding: 24px 0;
-}
+
 .header-container {
     display: flex;
 }
@@ -105,11 +103,12 @@ span {
 }
 
 .link {
+     padding: 24px 0;
     font-weight: 500;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
-      transition:var(--animation);
+      transition: var(--animation);
 }
 
 .link.slaider::after {
@@ -121,8 +120,6 @@ span {
     bottom: 0;
     background:var(--hover-bg-cl);
     border-radius: 2px;
-
-
 
 }
 
@@ -224,7 +221,7 @@ span {
     background-color: var(--blue-bg-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-      transition:var(--animation);
+     
 
 }
 
