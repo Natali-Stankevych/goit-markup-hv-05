@@ -110,7 +110,7 @@ span {
     letter-spacing: 0.02em;
     color: var(--main-txt-cl);
      position: relative;
-      transition: var(--animation);
+    transition: color var(--animation);
 }
 .link-list{
     padding: 24px 0;
@@ -121,7 +121,7 @@ span {
     display: block;
     width: 100%;
     height: 4px;
-   position: absolute;
+    position: absolute;
     bottom: 0;
     background:var(--hover-bg-cl);
     border-radius: 2px;
@@ -163,12 +163,13 @@ span {
     align-items: center;
     gap: 10px;
     color: var(--grey-txt-cl);
-     transition:var(--animation);
+     transition: color var(--animation);
 }
 
 .link-header:hover,
 .link-header:focus {
     color: var(--hover-bg-cl);
+    
 }
 
 .header-list {
@@ -226,6 +227,7 @@ span {
     background-color: var(--blue-bg-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+     transition: background-color var(--animation);
      
 
 }
@@ -233,6 +235,7 @@ span {
 .btn:hover,
 .btn:focus {
 background-color: var(--hover-bg-cl);
+
 }
 
 
@@ -357,13 +360,15 @@ height: 40px;
 color: var(--light-txt-cl);
 background-color:var(--blue-bg-cl);
 border-radius: 50%;
-  transition:var(--animation);
+ transition: color var(--animation), background-color var(--animation);
 }
 
 .socials-link:hover,
 .socials-link:focus {
     color: var(--light-txt-cl);
     background-color: var(--hover-bg-cl);
+ 
+    
 }
 
 .socials-icon{
@@ -398,7 +403,9 @@ border-radius: 50%;
     box-sizing: border-box;
     border: 1px solid var(--border-cl-cl);
     border-radius: 4px;
-      transition:var(--animation);
+     transition:color var(--animation),
+  border var(--animation),border-radius var(--animation)
+
 
 
 }
@@ -408,6 +415,8 @@ border-radius: 50%;
     color: var(--blue-bg-cl);
     border: 1px solid var(--blue-bg-cl);
     border-radius: 4px;
+ 
+    
 }
 
 .customers-icon {
@@ -516,13 +525,14 @@ color: var( --footer-txt-cl);
     color: var(--light-txt-cl);
     background-color: var(--icon-bg-cl);
     border-radius: 50%;
-      transition:var(--animation);
+     transition:color var(--animation),background-color var(--animation);
 }
 
 .socials-link-footer:hover,
 .socials-link-footer:focus{
     color: var(--light-txt-cl);
     background-color: var(--hover-soc-bg);
+    
 }
 
 
@@ -561,7 +571,8 @@ border: 1px solid var(--border-hed-cl);
     background-color: var(--lignt-bg-cl);
     cursor: pointer;
     border-radius: 4px;
-    transition:var(--animation);
+    transition: color var(--animation),background-color var(--animation), 
+    box-shadow var(--animation);
 }
 
 .btn-portfolio:hover,
@@ -569,6 +580,7 @@ border: 1px solid var(--border-hed-cl);
     color: var(--light-txt-cl);
     background-color: var(--hover-bg-cl);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   
 }
 
 .portfolio-list {
@@ -583,11 +595,12 @@ border: 1px solid var(--border-hed-cl);
 }
 .link-portfolio{
     text-decoration: none;
-    transition:var(--animation);
+    transition:color var(--animation), box-shadow var(--animation);
 }
 .link-portfolio:hover,
 .link-portfolio:focus {
-    color: var(--main-txt-cl);
+    color: var(--main-txt-cl); 
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
    
@@ -602,11 +615,7 @@ border: 1px solid var(--border-hed-cl);
    border-top: 0px;
     padding-left: 16px;
 }
-.link-portfolio:hover,
-.link-portfolio:focus {
-  
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .text-portfolio {
     font-size: 20px;
     line-height: calc(24/20);
@@ -635,7 +644,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     width: 100%;
     height: 100%;
     padding: 40px 32px 160px 32px;
-    transition: var(--animation);
+    transition:transform var(--animation);
 
     display: flex;
     align-items: center;
@@ -653,7 +662,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .list-portfolio:hover .owerlay {
     transform: translateY(0);
-    transition: transform var(--animation);
 }
 
 
@@ -708,7 +716,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: var(--border-color);
-     transition:var(--animation);
+     transition:color var(--animation), background-color var(--animation);
 }
 
 .modal-btn:hover,
@@ -718,11 +726,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .close-icon {
-    position: absolute;
-    fill: #000000;
+    fill: currentColor;
+    transition:fill var(--animation);
 }
 
 .close-icon:hover,
 .close-icon:focus{
     fill: currentColor ;
+    
 }
